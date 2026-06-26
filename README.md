@@ -92,3 +92,14 @@ To launch the entire platform in isolated containers:
 docker-compose up --build
 ```
 Once built, open [http://localhost:5173](http://localhost:5173) in your web browser.
+
+---
+
+## Assets
+
+### Cover Page Banner
+![ReliefRoute AI Cover Page Banner](assets/cover_page_banner.png)
+
+### Agent Workflow Diagram
+![ReliefRoute AI Agent Workflow Diagram](assets/architecture_diagram.png)
+
