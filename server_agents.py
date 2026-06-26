@@ -20,6 +20,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {
+        "status": "online",
+        "service": "ReliefRoute AI Triage Backend API",
+        "documentation": "/docs"
+    }
+
 DB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "db.json")
 
 # Default Mock Data
