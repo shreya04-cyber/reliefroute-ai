@@ -95,6 +95,11 @@ Once built, open [http://localhost:5173](http://localhost:5173) in your web brow
 
 ---
 
+## Demo Script
+A complete spoken narration script for presenting the platform features and visual architecture is available in [DEMO_SCRIPT.txt](DEMO_SCRIPT.txt).
+
+---
+
 ## Assets
 
 ### Cover Page Banner
