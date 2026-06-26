@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: node:18-alpine
+    working_dir: /app
+    ports:
+      - "5173:5173"
+      - "5000:5000"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - NODE_ENV=development
+    command: sh -c "npm install && npm run dev"
+
+  backend-agents:
+    image: python:3.10-slim
+    working_dir: /app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: sh -c "pip install -r requirements.txt && python server_agents.py"

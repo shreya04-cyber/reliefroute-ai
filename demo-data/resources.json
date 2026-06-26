@@ -1,0 +1,28 @@
+{
+  "supplies": {
+    "foodKits": { "name": "Food Kits", "count": 120, "allocated": 11 },
+    "waterKits": { "name": "Clean Water Kits", "count": 250, "allocated": 2 },
+    "medicalPacks": { "name": "Medical Packs", "count": 45, "allocated": 2 },
+    "hygieneKits": { "name": "Hygiene Kits", "count": 80, "allocated": 12 },
+    "blankets": { "name": "Blankets", "count": 180, "allocated": 0 }
+  },
+  "shelters": [
+    { "id": "communityHall", "name": "Community Hall Staging Point", "address": "Sector 2, Dry Zone", "capacity": 80, "occupied": 32, "lat": 22.558, "lng": 88.349 },
+    { "id": "subhashHighSchool", "name": "Subhash Nagar High School", "address": "Subhash Road", "capacity": 150, "occupied": 110, "lat": 22.537, "lng": 88.329 },
+    { "id": "gariaCommHall", "name": "Garia Community Center", "address": "Garia Station Road", "capacity": 60, "occupied": 18, "lat": 22.518, "lng": 88.388 }
+  ],
+  "volunteers": [
+    { "id": "v1", "name": "Dr. Roy", "skill": "medical", "phone": "+91 90001 00001", "status": "available", "location": { "lat": 22.554, "lng": 88.355 } },
+    { "id": "v2", "name": "Samir (Boat Owner)", "skill": "rescue", "phone": "+91 90001 00002", "status": "available", "location": { "lat": 22.569, "lng": 88.378 } },
+    { "id": "v3", "name": "Rahul", "skill": "logistics", "phone": "+91 90001 00003", "status": "available", "location": { "lat": 22.570, "lng": 88.310 } },
+    { "id": "v4", "name": "Nurse Tina", "skill": "medical", "phone": "+91 90001 00004", "status": "available", "location": { "lat": 22.529, "lng": 88.380 } },
+    { "id": "v5", "name": "John Doe", "skill": "logistics", "phone": "+91 90001 00005", "status": "assigned", "location": { "lat": 22.540, "lng": 88.340 } },
+    { "id": "v6", "name": "Sarah Connor", "skill": "rescue", "phone": "+91 90001 00006", "status": "available", "location": { "lat": 22.550, "lng": 88.360 } },
+    { "id": "v7", "name": "Arjun Dev", "skill": "sanitation", "phone": "+91 90001 00007", "status": "available", "location": { "lat": 22.531, "lng": 88.371 } }
+  ],
+  "transport": [
+    { "id": "truck1", "name": "High Clearance Truck 1", "status": "available", "hub": "Central Staging Hub" },
+    { "id": "truck2", "name": "Heavy Duty Truck 2", "status": "available", "hub": "West Staging Hub" },
+    { "id": "boat1", "name": "Rescue Inflatable Boat 1", "status": "assigned", "hub": "Riverfront Staging Point" }
+  ]
+}

@@ -1,0 +1,293 @@
+[
+  {
+    "id": "REQ-101",
+    "name": "Amina Khatun",
+    "phone": "+91 98301 23456",
+    "contactPreference": "phone",
+    "location": { "address": "Sector 3, Block C, Flooded Area", "lat": 22.552, "lng": 88.358 },
+    "category": "medical",
+    "peopleAffected": 1,
+    "vulnerable": { "children": false, "elderly": true, "disability": false, "pregnancy": false },
+    "urgencyDescription": "Elderly woman with high fever, unable to move due to waist-deep water inside the house. Needs immediate insulin supply and medical checkup.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T19:00:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 9.4,
+      "verificationConfidence": 96,
+      "duplicateOf": null,
+      "recommendedAction": "Dispatch Mobile Medical Team and insulin kits.",
+      "reasoning": "High urgency due to elderly vulnerability and medical criticality (insulin requirement combined with flooding restriction). Verified location coordinates inside critical flood sector.",
+      "matchedResources": [
+        { "type": "volunteer", "id": "v1", "name": "Dr. Roy", "skill": "medical", "distance": 0.3 },
+        { "type": "supply", "id": "medicalPacks", "name": "Medical Pack", "quantity": 1 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-102",
+    "name": "Vikram Malhotra",
+    "phone": "+91 98765 43210",
+    "contactPreference": "whatsapp",
+    "location": { "address": "Green View Apartments, Ground Floor", "lat": 22.565, "lng": 88.372 },
+    "category": "rescue",
+    "peopleAffected": 5,
+    "vulnerable": { "children": true, "elderly": true, "disability": false, "pregnancy": false },
+    "urgencyDescription": "Water levels rising rapidly on ground floor. We have an 80-year-old grandfather and a 3-year-old child. Need evacuation to a safe shelter.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T19:24:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 8.9,
+      "verificationConfidence": 92,
+      "duplicateOf": null,
+      "recommendedAction": "Dispatch Rescue Boat and assign 5 beds at Community Hall Staging Point.",
+      "reasoning": "Evacuation requested. Rising water level combined with extreme vulnerabilities (child, elderly) warrants immediate rescue squad dispatch.",
+      "matchedResources": [
+        { "type": "volunteer", "id": "v2", "name": "Samir (Boat Owner)", "skill": "rescue", "distance": 0.7 },
+        { "type": "shelter", "id": "communityHall", "name": "Community Hall Staging Point", "distance": 1.6 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-103",
+    "name": "Rajesh Kumar",
+    "phone": "+91 99033 11111",
+    "contactPreference": "sms",
+    "location": { "address": "Lake Gardens, Lane 2", "lat": 22.541, "lng": 88.345 },
+    "category": "water",
+    "peopleAffected": 4,
+    "vulnerable": { "children": true, "elderly": false, "disability": false, "pregnancy": false },
+    "urgencyDescription": "No drinking water for the last 36 hours. Local taps are contaminated with sewage water. We have two kids.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T19:42:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 7.2,
+      "verificationConfidence": 95,
+      "duplicateOf": null,
+      "recommendedAction": "Deliver 2 Water Kits via Logistics Volunteer.",
+      "reasoning": "Water contamination reported. Children present. Crucial resource (potable water) lack for 36 hours elevates priority to High.",
+      "matchedResources": [
+        { "type": "volunteer", "id": "v5", "name": "John Doe", "skill": "logistics", "distance": 0.4 },
+        { "type": "supply", "id": "waterKits", "name": "Water Purification Kit", "quantity": 2 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-104",
+    "name": "Rajesh K.",
+    "phone": "+91 99033 11111",
+    "contactPreference": "phone",
+    "location": { "address": "Lake Gardens", "lat": 22.542, "lng": 88.344 },
+    "category": "water",
+    "peopleAffected": 4,
+    "vulnerable": { "children": true, "elderly": false, "disability": false, "pregnancy": false },
+    "urgencyDescription": "Urgent need for drinking water in Lake Gardens. Water is contaminated. Please send help.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T19:48:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 4.5,
+      "verificationConfidence": 35,
+      "duplicateOf": "REQ-103",
+      "recommendedAction": "Flag as DUPLICATE. Merge with Request REQ-103.",
+      "reasoning": "High-confidence duplicate request. Matching phone number, identical location (within 150m), same category (water) and similar timing. Urgency score set lower to reflect merger recommendation.",
+      "matchedResources": []
+    }
+  },
+  {
+    "id": "REQ-105",
+    "name": "Priya Sharma",
+    "phone": "+91 98312 98765",
+    "contactPreference": "whatsapp",
+    "location": { "address": "Block D, Santoshpur High School Area", "lat": 22.528, "lng": 88.385 },
+    "category": "medical",
+    "peopleAffected": 3,
+    "vulnerable": { "children": false, "elderly": false, "disability": false, "pregnancy": true },
+    "urgencyDescription": "Pregnant woman experiencing labor pains. Water logged outside, normal cars cannot pass. Need specialized rescue vehicle or ambulance.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T20:00:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 9.8,
+      "verificationConfidence": 98,
+      "duplicateOf": null,
+      "recommendedAction": "Dispatch specialized high-clearance Rescue Truck (Truck-2) and Nurse Tina.",
+      "reasoning": "Extreme urgency. Active labor pain combined with impassable flood barrier. Immediate dispatch of logistics transport and medical support is required.",
+      "matchedResources": [
+        { "type": "volunteer", "id": "v4", "name": "Nurse Tina", "skill": "medical", "distance": 0.4 },
+        { "type": "transport", "id": "truck2", "name": "Heavy Duty Truck 2", "distance": 1.2 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-106",
+    "name": "Sunita Das",
+    "phone": "",
+    "contactPreference": "sms",
+    "location": { "address": "Subhash Nagar Slum Border", "lat": 22.535, "lng": 88.331 },
+    "category": "food",
+    "peopleAffected": 8,
+    "vulnerable": { "children": true, "elderly": true, "disability": false, "pregnancy": false },
+    "urgencyDescription": "Our shanties are completely destroyed. We are staying on the highway under plastic sheets. No food or milk for children since yesterday.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T20:18:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 8.5,
+      "verificationConfidence": 90,
+      "duplicateOf": null,
+      "recommendedAction": "Dispatch 8 Food Kits and assign 8 beds at Subhash Nagar High School Shelter.",
+      "reasoning": "Homelessness due to structural collapse. Large family group (8 persons) exposed to elements on highway with vulnerable children/elderly. High food and shelter urgency.",
+      "matchedResources": [
+        { "type": "shelter", "id": "subhashHighSchool", "name": "Subhash Nagar High School", "distance": 0.3 },
+        { "type": "supply", "id": "foodKits", "name": "Food Kit", "quantity": 8 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-107",
+    "name": "Abhijit Roy",
+    "phone": "+91 97488 44332",
+    "contactPreference": "email",
+    "location": { "address": "Garia Main Road, near Metro station", "lat": 22.515, "lng": 88.391 },
+    "category": "shelter",
+    "peopleAffected": 2,
+    "vulnerable": { "children": false, "elderly": false, "disability": false, "pregnancy": false },
+    "urgencyDescription": "House flooded with 2 feet of water. We are moving to the roof, but rain is continuous. Looking for a dry shelter.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T20:36:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 6.2,
+      "verificationConfidence": 94,
+      "duplicateOf": null,
+      "recommendedAction": "Direct to Garia Community Center. Route dispatch team if transport required.",
+      "reasoning": "Active flooding forcing roof evacuation. Non-vulnerable individuals, but ongoing storm elevates shelter need to high-medium priority.",
+      "matchedResources": [
+        { "type": "shelter", "id": "gariaCommHall", "name": "Garia Community Center", "distance": 0.4 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-108",
+    "name": "Harpreet Singh",
+    "phone": "+91 98400 98400",
+    "contactPreference": "phone",
+    "location": { "address": "Jadavpur St. Road, Block F", "lat": 22.532, "lng": 88.369 },
+    "category": "sanitation",
+    "peopleAffected": 12,
+    "vulnerable": { "children": false, "elderly": false, "disability": true, "pregnancy": false },
+    "urgencyDescription": "Community toilet block flooded and backflowing. Sewage water entering nearby houses. High risk of disease breakout. One disabled elderly resident.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T20:45:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 7.5,
+      "verificationConfidence": 91,
+      "duplicateOf": null,
+      "recommendedAction": "Dispatch sanitation team with disinfectant and 12 Hygiene Kits.",
+      "reasoning": "Blackwater/sewage ingress poses immediate public health hazard for 12+ residents, including a disabled citizen. Needs sanitation response.",
+      "matchedResources": [
+        { "type": "volunteer", "id": "v7", "name": "Arjun Dev", "skill": "sanitation", "distance": 0.2 },
+        { "type": "supply", "id": "hygieneKits", "name": "Hygiene Kit", "quantity": 12 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-109",
+    "name": "Tariq Ali",
+    "phone": "+91 99038 55443",
+    "contactPreference": "phone",
+    "location": { "address": "Metiabruz, Masjid Lane", "lat": 22.569, "lng": 88.305 },
+    "category": "medical",
+    "peopleAffected": 2,
+    "vulnerable": { "children": false, "elderly": true, "disability": true, "pregnancy: false": false },
+    "urgencyDescription": "Paralyzed uncle needs oxygen cylinder refill. Power cut for 24 hours, his backup concentrator is dead. Please help.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T20:54:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 9.6,
+      "verificationConfidence": 95,
+      "duplicateOf": null,
+      "recommendedAction": "Urgent dispatch of oxygen cylinder and emergency generator from Hub West.",
+      "reasoning": "Critical life support threat. Paralyzed patient relying on dead concentrator. Requires immediate power supply or oxygen cylinder dispatch.",
+      "matchedResources": [
+        { "type": "volunteer", "id": "v3", "name": "Rahul", "skill": "logistics", "distance": 0.4 },
+        { "type": "supply", "id": "medicalPacks", "name": "Oxygen Supply (Medical Kit)", "quantity": 1 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-110",
+    "name": "",
+    "phone": "",
+    "contactPreference": "whatsapp",
+    "location": { "address": "Tollygunge Karunamoyee", "lat": 22.521, "lng": 88.349 },
+    "category": "food",
+    "peopleAffected": 3,
+    "vulnerable": { "children": false, "elderly": false, "disability": false, "pregnancy": false },
+    "urgencyDescription": "Stuck on 2nd floor, nearby shops closed. Running out of groceries. We have dry snacks but need a hot meal or dry food kit.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T21:06:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 4.2,
+      "verificationConfidence": 89,
+      "duplicateOf": null,
+      "recommendedAction": "Queue for next standard food ration cycle.",
+      "reasoning": "Groceries running low, but dry snacks are available and no immediate water or medical threat exists. Safe on second floor. Medium-low priority.",
+      "matchedResources": [
+        { "type": "supply", "id": "foodKits", "name": "Food Kit", "quantity": 3 }
+      ]
+    }
+  },
+  {
+    "id": "REQ-111",
+    "name": "Tollygunge Resident",
+    "phone": "",
+    "contactPreference": "whatsapp",
+    "location": { "address": "Tollygunge Karunamoyee", "lat": 22.521, "lng": 88.350 },
+    "category": "food",
+    "peopleAffected": 3,
+    "vulnerable": { "children": false, "elderly": false, "disability": false, "pregnancy": false },
+    "urgencyDescription": "Isolated in Karunamoyee due to street flooding. Need groceries/food supplies.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T21:09:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 2.8,
+      "verificationConfidence": 42,
+      "duplicateOf": "REQ-110",
+      "recommendedAction": "Flag as DUPLICATE. Merge with Request REQ-110.",
+      "reasoning": "Identified duplicate request. Matching location within 50m, same category (food), identical timing, matching contact channel (whatsapp). Recommending merge.",
+      "matchedResources": []
+    }
+  },
+  {
+    "id": "REQ-112",
+    "name": "Gopal Banerjee",
+    "phone": "+91 98305 66778",
+    "contactPreference": "phone",
+    "location": { "address": "Ballygunge Circular Road, Near Post Office", "lat": 22.548, "lng": 88.361 },
+    "category": "rescue",
+    "peopleAffected": 2,
+    "vulnerable": { "children": false, "elderly": true, "disability": false, "pregnancy": false },
+    "urgencyDescription": "Tree fell on our house entrance, blocking the door. Street flooded up to knees. My elderly wife and I are trapped inside.",
+    "consent": true,
+    "status": "pending",
+    "createdAt": "2026-06-25T21:18:00.000Z",
+    "aiAnalysis": {
+      "urgencyScore": 8.0,
+      "verificationConfidence": 93,
+      "duplicateOf": null,
+      "recommendedAction": "Dispatch Rescue Squad (Chainsaw crew) and Volunteer Sarah.",
+      "reasoning": "Physical entrapment combined with flood water block and elderly occupants creates high risk of hypothermia or emergency access failure.",
+      "matchedResources": [
+        { "type": "volunteer", "id": "v6", "name": "Sarah Connor", "skill": "rescue", "distance": 0.2 }
+      ]
+    }
+  }
+]
